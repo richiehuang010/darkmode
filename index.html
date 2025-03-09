@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB dark mode & light mode</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="div-utama">
-    <div class="kartu">
-        <h2>BIOLOGI</h2> 
-        <div class="partone">
-            <h3>Gerak Manusia</h3>
-            <li>Otot</li>
-            <li>Tulang</li>
-            <li>Rangka</li>
-            <li>Sendi</li>
-            <h4>Otot ada 3</h4>
-            <li>Otot Lurik di rangka tubuh</li>
-            <li>Otot Polos di sistem Pencernaan</li>
-            <li>Otot Jantung di Jantung</li>
-            <h4>Ciri-ciri otot polos</h4>
-            <li>Sel berbentuk gelendong</li>
-            <li>Memiliki 1 inti sel di tengah</li>
-            <li>Bekerja tak sadar</li>
-            <h4>Ciri ciri otot lurik</h4>
-            <li>Sel berbentuk silindris</li>
-            <li>Inti sel di tengah</li>
-            <li>Bekerja sadar</li>
-            <li>Bekerja cepat , tapi cepat lelah</li>
-            <h4>Ciri ciri otot jantung</h4>
-            <li>Sel berbentuk silindris , serabut bercabang</li>
-            <li>1 inti sel di dalam</li>
-            <li>bekerja tak sadar</li>
-            <li>ada garis terang dan gelap melintang</li>
-        </div>
-        <div class="gelap" onclick="ubahwarna()">
-            <button>Ubah Mode</button>
-        </div>
-     </div>
-     <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+    <main>
+      <h1 class="m">Web Darkmode</h1>
+      <button class="m" onclick="ubahwarna()">Change Mode</button>
+      <p class="m">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo
+        numquam sequi suscipit accusamus reprehenderit placeat laudantium id ex
+        praesentium dicta rem quas beatae, adipisci nisi alias consequuntur,
+        rerum possimus.
+      </p>
+    </main>
+    <footer>Web ini pembelajaran dari @richiehuang010</footer>
+    <script>
+      // MENSELEKSI BODY
+      let body = document.body;
+      // FUNGSI
+      function ubahwarna() {
+        if (body.style.backgroundColor == "white") {
+          body.style.backgroundColor = "black";
+          body.style.color = "white";
+        } else {
+          body.style.backgroundColor = "white";
+          body.style.color = "black";
+        }
+      }
+    </script>
+  </body>
 </html>

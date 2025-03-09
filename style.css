@@ -1,99 +1,40 @@
-:root {
-    --primary: #b6895b;
-    --bg: #252a25;
-}
-  
-
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- outline: none;
- border: none;
- text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
-  
-html {
- scroll-behavior: smooth;
-}
-  
-.wrap-check-64 .switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-
-.wrap-check-64 .switch input {
-  display: none;
-}
-
-.wrap-check-64 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-}
-
-.wrap-check-64 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-
-.wrap-check-64 input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-.wrap-check-64 input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.wrap-check-64 .slider.round {
-  border-radius: 34px;
-}
-
-.wrap-check-64 .slider.round:before {
-  border-radius: 50%;
-}
-
 body {
- font-family: 'Poppins', sans-serif;
- background-color: var(--bg);
- color: #fff;
- margin: 0;
- padding: 0;
- width: 100vv;
- padding-top: 5vh;
+  background-color: #fff;
+  color: black;
 }
 
-body.terang{
-  background-color: white;
-  color: #000;
-}
-
-h2.gelap{
-  color: white;
+nav {
+  background-color: orangered;
+  padding: 10px;
   text-align: center;
 }
 
-p{
-  color: whitesmoke;
-  margin: 0;
-  padding: 15px;
-  font-size: 1.5rem;
+nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
-li{
-  padding: 15px;
-  font-size: 15px;
+.m {
+  margin: 10px;
+}
+button {
+  border: none;
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+  height: 65vh;
+}
+footer {
+  bottom: 0;
+  padding: 10px;
+  background-color: orange;
+  padding: 20px;
 }
